@@ -1,0 +1,11 @@
+<form #createBlogForm="ngForm"  (ngSubmit)="search()">
+
+  <div class="form-group  d-flex">
+    <input type="text" name="title" [(ngModel)]="title" #titles="ngModel" class="form-control" placeholder="Enter Name" required>
+    <button type="submit" class="btn btn-default" [disabled]="!createBlogForm.form.valid" style="margin-left: 4px;;" >Search</button>
+  </div>
+
+
+</form>
+
+<router-outlet></router-outlet>
